@@ -664,7 +664,7 @@ header {
 .meet-team_members_member {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    /* align-items: center; */
     margin-bottom: 60px;
 }
 .meet-team_members_member h4 {
@@ -693,6 +693,73 @@ header {
     color: #bababa;
     font-size: 21px;
     /* margin-top: 30px; */
+}
+#ben {
+    background: #1c1a1b;
+}
+#ben img {
+    height: 100%;
+}
+#ben .left {
+    width: 32%;
+}
+#ben h4 {
+    font-size: 38px;
+}
+#ben .red-tag {
+    font-size: 19px;
+}
+#ben-right {
+    padding: 20px 20px;
+    padding-left: 25px;
+}
+
+/*  -- Web Dev Section --*/
+#web-dev {
+    background: #121212;
+    padding: 50px 0;
+}
+.web-dev-wrapper {
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+.web-dev_card {
+    margin: 0 30px;
+}
+.web-dev_card h2 {
+    color: white;
+    font-size: 20px;
+    margin-top: 10px;
+}
+.web-dev_card .red-tag {
+    font-size: 17px;
+}
+
+/*  -- Member Section --*/
+#members {
+    background: #121212;
+    color: white;
+    padding: 120px 0;
+}
+#members h1 {
+    text-align: center;
+    font-size: 50px;
+}
+#members ul {
+    width: 70%;
+    margin: 0 auto;
+    list-style: disc;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 70px;
+}
+#members ul li {
+    margin: 20px 60px;
+    font-size: 20px;
 }
 @media screen and (max-width: 768px) {
     header {
@@ -770,8 +837,11 @@ header {
     #hero p {
         font-size: 18px;
     }
+    .meet-team_members {
+        width: 85%;
+    }
     .meet-team_members_member .left {
-        width: 60% !important;
+        width: 100% !important;
         margin-bottom: 20px;
     }
 
@@ -836,6 +906,9 @@ header {
     }
     #project {
         width: 95%;
+    }
+    #web-dev {
+        margin-top: -5px;
     }
 }
 @media screen and (max-width: 950px) {
@@ -923,6 +996,10 @@ header {
 
     .meet-team_members_member .right {
         width: 90%;
+        padding-left: 0;
+    }
+    .web-dev-wrapper {
+        flex-direction: column;
     }
 }
 @media screen and (max-width: 1300px) {
