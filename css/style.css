@@ -377,6 +377,9 @@ header {
 }
 
 /* ---- OUTREACH PAGE ----*/
+.half-hero {
+    max-height: 62vh;
+}
 .outreach {
     background: url("../img/OutReach-banner.png") no-repeat center center/cover !important;
 
@@ -384,15 +387,14 @@ header {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    max-height: 62vh;
 }
-.outreach h1 {
+.half-hero h1 {
     font-size: 52px;
     color: white;
     margin-bottom: 5px !important;
 }
-.outreach p,
-.outreach h1 {
+.half-hero p,
+.half-hero h1 {
     text-align: center !important;
 }
 
@@ -499,6 +501,92 @@ header {
 .rocket-wrap .right {
     padding-left: 100px;
 }
+
+/* ----- SPONSOR PAGE ----- */
+.sponsor {
+    background: #121212 !important;
+}
+#logos {
+    background: #121212;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#logos .top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#logos .bottom {
+    margin: 85px 0;
+}
+#logos .top img {
+    margin: 0 40px;
+}
+
+/* -- PRIVATE SPONSOR SECTION -- */
+#private-sponsors {
+    background: #121212;
+    min-height: 110vh;
+    padding: 170px 0;
+    position: relative;
+    padding-top: 250px;
+}
+#private-sponsors h1 {
+    font-size: 52px;
+    color: white;
+    margin-bottom: 5px !important;
+}
+#private-sponsors p,
+#private-sponsors h1 {
+    text-align: center !important;
+    color: white;
+}
+.s-triangle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+.private-sponsor_details {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 90px;
+}
+
+.private-sponsor_details h3 {
+    margin-bottom: 20px;
+    font-size: 37px;
+    font-weight: 500;
+}
+.private-sponsor_details p {
+    font-size: 20px;
+    letter-spacing: 1.1px;
+    color: #e1e1e1;
+    margin: 5px 0;
+}
+#sponsors-thanks {
+    margin-top: 250px;
+}
+#sponsors-thanks div {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin: 20px 0; */
+    margin-top: 90px;
+}
+#sponsors-thanks div img {
+    margin: 0 25px;
+}
 @media screen and (max-width: 768px) {
     header {
         /* flex-direction: column; */
@@ -550,6 +638,18 @@ header {
     .event-details .right {
         width: 100% !important;
     }
+    #logos .top,
+    #logos .bottom {
+        width: 70%;
+        margin: 0 auto;
+    }
+    #private-sponsors {
+        padding-right: 25px;
+        padding-left: 25px;
+    }
+    #sponsors-thanks div {
+        flex-direction: column;
+    }
 }
 @media screen and (max-width: 950px) {
     .navItems {
@@ -557,6 +657,16 @@ header {
     }
     #hamburger {
         display: block;
+    }
+    #logos .top {
+        flex-direction: column;
+    }
+    #logos .bottom {
+        margin-top: 0;
+    }
+    #logos .top img {
+        display: inline-block;
+        margin-bottom: 55px;
     }
 }
 @media screen and (max-width: 1080px) {
@@ -656,6 +766,16 @@ header {
     #rocket {
         padding-top: 400px;
     }
+    #logos img {
+        width: 380px;
+    }
+    /* #logos .bottom img {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    } */
 }
 @media screen and (max-width: 1400px) {
     #about h2 {
