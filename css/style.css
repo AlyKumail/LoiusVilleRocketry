@@ -330,9 +330,11 @@ header {
     width: 80%;
     margin: 0 auto;
 }
-#project .left,
-#project .right {
+#project .left {
     width: 50%;
+}
+#project .right {
+    width: 40%;
 }
 #project .left h2 {
     font-size: 47px;
@@ -341,11 +343,17 @@ header {
 #project .right h2 {
     font-size: 47px;
 }
+#project .right h3 {
+    letter-spacing: 1.25px;
+}
 #project .right {
     text-align: center;
+    background: #1c1a1b;
+    padding: 55px 0px;
+    padding-bottom: 75px;
 }
 #project .right p {
-    width: 60%;
+    width: 70%;
     margin: 0 auto;
     font-size: 21px;
     margin-top: 17px;
@@ -482,6 +490,20 @@ header {
     background: #121212;
     padding: 180px 0;
 }
+#rocket h1 {
+    color: white;
+    text-align: left;
+    font-size: 47px;
+    margin: 0 auto;
+    background: #1c1a1b;
+    padding: 40px;
+    width: 85%;
+    padding-bottom: 50px;
+    letter-spacing: 1.1px;
+}
+.orange-txt {
+    color: rgb(240, 181, 71);
+}
 #rocket p {
     color: #bababa;
     font-size: 23px;
@@ -492,14 +514,25 @@ header {
     width: 80%;
     margin: 0 auto;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
+    background: #1c1a1b;
+    padding: 40px;
+    width: 85%;
+    padding-bottom: 70px;
 }
 .rocket-wrap .left,
 .rocket-wrap .right {
     width: 50%;
 }
+.rocket-wrap .left h2 {
+    color: white;
+}
 .rocket-wrap .right {
-    padding-left: 100px;
+    padding-left: 10px;
+    padding-right: 50px;
+}
+.rocket-wrap .right img {
+    width: 100%;
 }
 
 /* ----- SPONSOR PAGE ----- */
@@ -642,15 +675,24 @@ header {
 }
 .meet-team_members_member .left {
     width: 28%;
+    display: flex;
+    flex-direction: column;
 }
 
 .meet-team_members_member .right {
     width: 72%;
+    padding-left: 35px;
 }
 .meet-team_members_member .right p {
     font-size: 24px;
     line-height: 37px;
     margin-bottom: 20px;
+}
+.event-container p {
+    text-align: center;
+    color: #bababa;
+    font-size: 21px;
+    /* margin-top: 30px; */
 }
 @media screen and (max-width: 768px) {
     header {
@@ -718,6 +760,83 @@ header {
     .private-sponsor_details {
         align-items: center;
     }
+    #hero h1 {
+        text-align: center;
+        font-size: 45px;
+    }
+    #hero h3 {
+        font-size: 20px;
+    }
+    #hero p {
+        font-size: 18px;
+    }
+    .meet-team_members_member .left {
+        width: 60% !important;
+        margin-bottom: 20px;
+    }
+
+    .meet-team_members_member .right {
+        width: 100% !important;
+        padding-left: 0;
+    }
+    #rocket {
+        padding-top: 700px !important;
+    }
+    .speaker {
+        flex-direction: column;
+        width: 100% !important;
+        /* display: flex; */
+    }
+    .event-details {
+        padding: 25px 30px;
+    }
+    .event-details .speaker {
+        width: 100%;
+    }
+
+    .event-container {
+        transform: translate(-50%, -10%) !important;
+    }
+    .event-container .right {
+        padding-left: 0px;
+    }
+    .speaker img {
+        margin: 10px auto;
+    }
+    .speaker-details {
+        margin-left: 0;
+    }
+    .speaker-details h2 {
+        flex-direction: column-reverse;
+        margin-top: 25px;
+        text-align: center;
+    }
+    .speaker-details h2 span {
+        margin: 10px 0;
+    }
+    .speaker p {
+        text-align: center;
+    }
+    .event-container p {
+        text-align: center;
+        color: #bababa;
+        font-size: 17px;
+        /* padding: 0 20px; */
+    }
+    .rocket-wrap .right {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .rocket-wrap .right img {
+        width: 100%;
+    }
+    #project .left img {
+        margin-top: 50px;
+        margin-left: 0px;
+    }
+    #project {
+        width: 95%;
+    }
 }
 @media screen and (max-width: 950px) {
     .navItems {
@@ -779,7 +898,7 @@ header {
     }
     .rocket-wrap .left,
     .rocket-wrap .right {
-        width: 90%;
+        width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -787,12 +906,23 @@ header {
     }
     .rocket-wrap .right {
         padding-left: 0px;
+        /* width: 100% !important; */
     }
     .rocket-wrap p {
         text-align: center;
     }
     .rocket-wrap .left {
         margin-bottom: 60px;
+    }
+    .meet-team_members_member {
+        flex-direction: column;
+    }
+    .meet-team_members_member .left {
+        width: 50%;
+    }
+
+    .meet-team_members_member .right {
+        width: 90%;
     }
 }
 @media screen and (max-width: 1300px) {
@@ -821,7 +951,7 @@ header {
     }
     .speaker {
         margin: 20px auto;
-        width: 420px !important;
+        width: 420px;
         margin-bottom: 30px;
     }
     .event-details .right {
@@ -844,6 +974,9 @@ header {
         align-items: center;
         text-align: center;
     } */
+    .meet-team_members_member .right p {
+        font-size: 21px;
+    }
 }
 @media screen and (max-width: 1400px) {
     #about h2 {
