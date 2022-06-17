@@ -932,7 +932,10 @@ header {
     #hero p {
         width: 80% !important;
     }
-
+    #footer {
+        margin-top: -2px;
+        border-bottom: 5px solid black;
+    }
     .active-nav::before {
         bottom: -5px;
     }
@@ -964,6 +967,10 @@ header {
     }
     .event-details .right {
         width: 100% !important;
+    }
+
+    #logos {
+        margin-top: -5px;
     }
     #logos .top,
     #logos .bottom {
