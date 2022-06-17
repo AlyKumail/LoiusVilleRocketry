@@ -58,7 +58,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     width: 95%;
     background-color: transparent;
     height: 11.5vh;
@@ -69,6 +68,7 @@ header {
 
 .navItems {
     display: flex;
+    z-index: 4;
 }
 
 .navItems li {
@@ -761,6 +761,159 @@ header {
     margin: 20px 60px;
     font-size: 20px;
 }
+
+/* ---- Contact PAGE ---- */
+#contact {
+    min-height: 100vh;
+    background: #121212;
+    padding-top: 180px;
+}
+.contact-wrapper {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#contact h1 {
+    color: white;
+    font-size: 50px;
+}
+#contact p {
+    font-size: 23px;
+    letter-spacing: 1.9px;
+    color: white;
+}
+.red {
+    color: #ef0f0f;
+    text-decoration: underline;
+}
+#contact i {
+    color: white;
+    margin: 30px 10px;
+}
+#contact form {
+    display: flex;
+    width: 90%;
+    margin-top: 35px;
+}
+#contact form .left,
+#contact form .right {
+    width: 50%;
+    /* border: 1px solid gray; */
+}
+#contact form .left {
+    display: flex;
+    flex-direction: column;
+}
+#contact .right {
+    padding-left: 40px;
+    padding-bottom: 15px;
+}
+#contact input,
+#contact textarea {
+    padding: 19px 11px;
+    background: #171717;
+    /* margin: 10px 0; */
+
+    margin-bottom: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+}
+#contact input::placeholder,
+#contact textarea::placeholder {
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    font-family: "Oswald";
+}
+#contact textarea {
+    width: 100%;
+    height: 100%;
+}
+#contact .right {
+}
+.form-btn {
+    margin-top: 20px;
+    display: flex;
+    width: 90%;
+    justify-content: flex-end;
+}
+.form-btn a {
+    color: white;
+}
+
+/* ---- JOIN PAGE ----- */
+#join {
+    height: 100vh;
+    background: #121212;
+    /* padding-top: 180px; */
+    overflow: hidden;
+}
+.join-wrapper {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.join-wrapper .left,
+.join-wrapper .right {
+    width: 50%;
+    /* border: 1px solid gray; */
+    height: 100%;
+}
+.join-wrapper .right {
+    position: relative;
+    /* z-index: 0; */
+    /* background-image: url("./img/join-img.png") no-repeat center center/cover; */
+}
+.join-wrapper .right .join-bg {
+    width: 100%;
+    height: 100%;
+}
+
+.join-text {
+    position: absolute;
+    width: 55%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.join-wrapper form {
+    display: flex;
+    flex-direction: column;
+    width: 67%;
+    margin: 0 auto;
+    padding-top: 190px;
+}
+#join input,
+#join textarea {
+    padding: 19px 11px;
+    background: #171717;
+    /* margin: 10px 0; */
+
+    margin-bottom: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+}
+#join input::placeholder,
+#join textarea::placeholder {
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    font-family: "Oswald";
+}
+#join textarea {
+    width: 100%;
+    height: 210px;
+}
+#join .form-btn {
+    display: flex;
+    justify-content: flex-start;
+}
+.top-p {
+    z-index: 99;
+}
 @media screen and (max-width: 768px) {
     header {
         /* flex-direction: column; */
@@ -910,6 +1063,40 @@ header {
     #web-dev {
         margin-top: -5px;
     }
+    #contact {
+        padding-bottom: 40px;
+    }
+    #contact p {
+        text-align: center;
+    }
+    #contact form {
+        flex-direction: column;
+    }
+    #contact form .left,
+    #contact form .right {
+        width: 90%;
+        margin: 0 auto;
+    }
+    #contact form .right {
+        padding-left: 0px;
+    }
+    #contact form .right textarea {
+        height: 200px;
+    }
+    .join-wrapper form {
+        width: 90%;
+    }
+    .join-wrapper .right {
+        /* display: none; */
+        /* margin-top: 300px; */
+        width: 100%;
+        height: 50vh !important;
+        margin-bottom: 20px;
+    }
+    #join {
+        padding-bottom: 30px;
+        height: 130vh;
+    }
 }
 @media screen and (max-width: 950px) {
     .navItems {
@@ -927,6 +1114,23 @@ header {
     #logos .top img {
         display: inline-block;
         margin-bottom: 55px;
+    }
+    .join-wrapper .left {
+        width: 90%;
+        /* padding-top: 20px; */
+    }
+    .join-wrapper .right {
+        /* display: none; */
+        /* margin-top: 300px; */
+        width: 100%;
+        height: 60vh;
+        margin-bottom: 20px;
+    }
+    .join-wrapper {
+        flex-direction: column-reverse;
+    }
+    .join-wrapper form {
+        padding-top: 20px;
     }
 }
 @media screen and (max-width: 1080px) {
@@ -1000,6 +1204,12 @@ header {
     }
     .web-dev-wrapper {
         flex-direction: column;
+    }
+    #contact form {
+        width: 100%;
+    }
+    .contact-wrapper {
+        width: 80%;
     }
 }
 @media screen and (max-width: 1300px) {
