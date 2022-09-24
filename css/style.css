@@ -79,7 +79,7 @@ header {
     color: var(--light-gray);
     transition: all 0.185s ease-in-out;
     padding: 7px;
-    font-size: 17px;
+    font-size: 14px;
     font-weight: 500;
 }
 
@@ -149,6 +149,14 @@ header {
 #hero h1 {
     margin-bottom: 25px;
 }
+#hero h1 img,
+#hero h2 img {
+    width: 65%;
+    display: block;
+    margin: 0.5rem auto;
+    /* margin-bottom: 1rem; */
+}
+
 #hero h2 {
     margin-bottom: 25px;
 }
@@ -241,11 +249,11 @@ header {
 }
 #about h2 {
     margin: 25px 0;
-    font-size: 58px;
+    font-size: 45px !important;
 }
 #about p {
     color: var(--light-gray);
-    font-size: 26px;
+    font-size: 17px !important;
     font-weight: 300;
     line-height: 155%;
 }
@@ -256,7 +264,7 @@ header {
 }
 
 #about .video {
-    height: 415px;
+    height: 340px;
 }
 #about .left {
     padding-right: 30px;
@@ -323,7 +331,6 @@ header {
 }
 #project {
     min-height: 100vh;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -337,14 +344,14 @@ header {
     width: 40%;
 }
 #project .left h2 {
-    font-size: 47px;
+    font-size: 42px;
     margin-top: 40px;
 }
 #project .right h2 {
-    font-size: 47px;
+    font-size: 38px;
 }
 #project .right h3 {
-    letter-spacing: 1.25px;
+    letter-spacing: 1.2px;
 }
 #project .right {
     text-align: center;
@@ -355,11 +362,11 @@ header {
 #project .right p {
     width: 70%;
     margin: 0 auto;
-    font-size: 21px;
+    font-size: 18px;
     margin-top: 17px;
 }
 #project .left p {
-    font-size: 30px;
+    font-size: 25px;
 }
 #project .left {
     display: flex;
@@ -397,9 +404,9 @@ header {
     background-size: cover;
 }
 .half-hero h1 {
-    font-size: 52px;
+    font-size: 48px;
     color: white;
-    margin-bottom: 5px !important;
+    margin-bottom: 0px !important;
 }
 .half-hero p,
 .half-hero h1 {
@@ -431,7 +438,7 @@ header {
     width: 50%;
 }
 .event-container .right {
-    padding-left: 50px;
+    /* padding-left: 50px; */
 }
 .event-details {
     position: relative;
@@ -442,7 +449,7 @@ header {
 }
 .event-details h1 {
     color: white;
-    font-size: 50px;
+    font-size: 42px;
 }
 .blue-txt {
     color: #346dff;
@@ -452,21 +459,24 @@ header {
     width: 62%;
     display: flex;
     justify-content: space-between;
-    padding: 18px 28px;
+    padding: 25px 28px;
     /* padding-left: 30px; */
     margin-top: 45px;
 }
 .speaker img {
-    width: 50px;
-    height: 50px;
+    width: 55px;
+    height: 55px;
     /* margin-right: 20px; */
 }
 .speaker h2 {
     color: white;
+    font-size: 20px !important;
+    letter-spacing: 1px;
 }
 .speaker p {
     color: #bababa;
-    font-size: 19px;
+    font-size: 15px !important;
+    text-align: left !important;
 }
 .speaker-details {
     margin-left: 20px;
@@ -484,6 +494,9 @@ header {
     font-size: 20px;
     margin-top: 20px;
 }
+.speaker-link {
+    font-size: 18px !important;
+}
 
 /* --Rocket Section --*/
 #rocket {
@@ -493,12 +506,12 @@ header {
 #rocket h1 {
     color: white;
     text-align: left;
-    font-size: 47px;
+    font-size: 40px;
     margin: 0 auto;
     background: #1c1a1b;
     padding: 40px;
     width: 85%;
-    padding-bottom: 50px;
+    padding-bottom: 20px;
     letter-spacing: 1.1px;
 }
 .orange-txt {
@@ -506,7 +519,7 @@ header {
 }
 #rocket p {
     color: #bababa;
-    font-size: 23px;
+    font-size: 19px;
     margin-bottom: 45px;
 }
 .rocket-wrap {
@@ -564,10 +577,10 @@ header {
     min-height: 110vh;
     padding: 170px 0;
     position: relative;
-    padding-top: 250px;
+    padding-top: 190px;
 }
 #private-sponsors h1 {
-    font-size: 52px;
+    font-size: 45px;
     color: white;
     margin-bottom: 5px !important;
 }
@@ -598,19 +611,19 @@ header {
 
 .private-sponsor_details h3 {
     margin-bottom: 20px;
-    font-size: 37px;
+    font-size: 30px;
     font-weight: 500;
     z-index: 2;
 }
 .private-sponsor_details p {
-    font-size: 20px;
-    letter-spacing: 1.1px;
+    font-size: 17px;
+    letter-spacing: 1px;
     color: #e1e1e1;
-    margin: 5px 0;
+    margin: 2px 0;
     z-index: 2;
 }
 #sponsors-thanks {
-    margin-top: 250px;
+    margin-top: 230px;
 }
 #sponsors-thanks div {
     width: 70%;
@@ -631,16 +644,18 @@ header {
     background: url("../img/team-hero.png") no-repeat center center/cover !important;
 }
 .team h3 {
-    font-size: 28px;
+    font-size: 25px;
     letter-spacing: 1.2px;
 }
 .team h1 {
     color: white;
-    font-size: 58px;
+    font-size: 50px;
+    margin-bottom: 10px !important;
 }
 .team p {
     text-align: center !important;
-    font-size: 21px;
+    font-size: 19px;
+    letter-spacing: 1px !important;
 }
 .team .btn {
     margin-bottom: 70px;
@@ -653,12 +668,12 @@ header {
     padding: 100px 0;
 }
 #meet-team h1 {
-    font-size: 50px;
+    font-size: 40px !important;
     text-align: center;
     margin-bottom: 120px;
 }
 .meet-team_members {
-    width: 65%;
+    width: 68%;
     margin: 0 auto;
 }
 .meet-team_members_member {
@@ -668,10 +683,10 @@ header {
     margin-bottom: 60px;
 }
 .meet-team_members_member h4 {
-    font-size: 21px;
+    font-size: 19px;
 }
 .meet-team_members_member .red-tag {
-    font-size: 15px;
+    font-size: 14px;
 }
 .meet-team_members_member .left {
     width: 28%;
@@ -684,8 +699,8 @@ header {
     padding-left: 35px;
 }
 .meet-team_members_member .right p {
-    font-size: 24px;
-    line-height: 37px;
+    font-size: 18px;
+    line-height: 28px;
     margin-bottom: 20px;
 }
 .event-container p {
@@ -701,13 +716,13 @@ header {
     height: 100%;
 }
 #ben .left {
-    width: 32%;
+    width: 35%;
 }
 #ben h4 {
-    font-size: 38px;
+    font-size: 32px;
 }
 #ben .red-tag {
-    font-size: 19px;
+    font-size: 17px;
 }
 #ben-right {
     padding: 20px 20px;
@@ -746,7 +761,7 @@ header {
 }
 #members h1 {
     text-align: center;
-    font-size: 50px;
+    font-size: 42px;
 }
 #members ul {
     width: 70%;
@@ -759,14 +774,14 @@ header {
 }
 #members ul li {
     margin: 20px 60px;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 /* ---- Contact PAGE ---- */
 #contact {
     min-height: 100vh;
     background: #121212;
-    padding-top: 180px;
+    padding-top: 120px;
 }
 .contact-wrapper {
     width: 70%;
@@ -778,10 +793,10 @@ header {
 }
 #contact h1 {
     color: white;
-    font-size: 50px;
+    font-size: 41px;
 }
 #contact p {
-    font-size: 23px;
+    font-size: 18px;
     letter-spacing: 1.9px;
     color: white;
 }
@@ -796,7 +811,7 @@ header {
 #contact form {
     display: flex;
     width: 90%;
-    margin-top: 35px;
+    margin-top: 20px;
 }
 #contact form .left,
 #contact form .right {
@@ -815,6 +830,7 @@ header {
 #contact textarea {
     padding: 19px 11px;
     background: #171717;
+    color: white;
     /* margin: 10px 0; */
 
     margin-bottom: 16px;
@@ -822,7 +838,7 @@ header {
 }
 #contact input::placeholder,
 #contact textarea::placeholder {
-    font-size: 18px;
+    font-size: 14px;
     letter-spacing: 1.5px;
     font-family: "Oswald";
 }
@@ -833,13 +849,14 @@ header {
 #contact .right {
 }
 .form-btn {
-    margin-top: 20px;
+    margin-top: 10px;
     display: flex;
     width: 90%;
     justify-content: flex-end;
 }
 .form-btn a {
     color: white;
+    font-size: 15px;
 }
 
 /* ---- JOIN PAGE ----- */
@@ -886,26 +903,29 @@ header {
     flex-direction: column;
     width: 67%;
     margin: 0 auto;
-    padding-top: 190px;
+    padding-top: 120px;
+    z-index: 99 !important;
+    position: relative;
 }
 #join input,
 #join textarea {
-    padding: 19px 11px;
+    padding: 12px 11px;
     background: #171717;
     /* margin: 10px 0; */
+    color: white;
 
     margin-bottom: 16px;
     border: 1px solid rgba(255, 255, 255, 0.06);
 }
 #join input::placeholder,
 #join textarea::placeholder {
-    font-size: 18px;
-    letter-spacing: 1.5px;
+    font-size: 12px;
+    letter-spacing: 1.3px;
     font-family: "Oswald";
 }
 #join textarea {
     width: 100%;
-    height: 210px;
+    height: 180px;
 }
 #join .form-btn {
     display: flex;
